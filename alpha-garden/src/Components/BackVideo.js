@@ -5,9 +5,9 @@ class BackVideo extends React.Component{
 	render(){
 	  return (
 	    
-		 <video autoPlay id="backgroundVideo" onEnded={this.props.endFunc}>
+		 <video autoPlay muted id="backgroundVideo" onEnded={this.props.endFunc}>
 	        <source src={this.props.vidName} type="video/mp4" />
-	     </video>
+	     < /video>
 
 	    
 	  );

@@ -13,16 +13,23 @@ body {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: 
 }
 
 .loadingOverlay {
   position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  bottom: 50%;
   color: #f1f1f1;
-  width: 50%;
+  width: 100%;
   padding: 20px;
   text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.loadingOverlay p{
+	position: relative;
+	right: 50px;
 }
 
 code {

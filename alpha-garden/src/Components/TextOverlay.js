@@ -13,7 +13,7 @@ import React from 'react';
 
 	 return (
 	    <div className="loadingOverlay">
-		 	<p> Garden Loading... </p>
+		 	<p> LOADING GARDEN... </p>
 		 	<h1> Day: {today.getDate() + today.getMonth()} </h1>
 		 </div>)
 
