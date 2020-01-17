@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/AlphaGardenWebApp/static/css/main.166e5979.chunk.css",
+    "main.js": "/AlphaGardenWebApp/static/js/main.cd8d25ad.chunk.js",
+    "main.js.map": "/AlphaGardenWebApp/static/js/main.cd8d25ad.chunk.js.map",
+    "runtime-main.js": "/AlphaGardenWebApp/static/js/runtime-main.0c451884.js",
+    "runtime-main.js.map": "/AlphaGardenWebApp/static/js/runtime-main.0c451884.js.map",
+    "static/js/2.f35024f0.chunk.js": "/AlphaGardenWebApp/static/js/2.f35024f0.chunk.js",
+    "static/js/2.f35024f0.chunk.js.map": "/AlphaGardenWebApp/static/js/2.f35024f0.chunk.js.map",
+    "index.html": "/AlphaGardenWebApp/index.html",
+    "precache-manifest.6327a8e869d10cf5272c03ae9d5c4dde.js": "/AlphaGardenWebApp/precache-manifest.6327a8e869d10cf5272c03ae9d5c4dde.js",
+    "service-worker.js": "/AlphaGardenWebApp/service-worker.js",
+    "static/css/main.166e5979.chunk.css.map": "/AlphaGardenWebApp/static/css/main.166e5979.chunk.css.map",
+    "static/js/2.f35024f0.chunk.js.LICENSE": "/AlphaGardenWebApp/static/js/2.f35024f0.chunk.js.LICENSE",
+    "static/media/Garden-Overview.bmp": "/AlphaGardenWebApp/static/media/Garden-Overview.2eca6955.bmp",
+    "static/media/logo.svg": "/AlphaGardenWebApp/static/media/logo.5d5d9eef.svg",
+    "static/media/testSmall.mp4": "/AlphaGardenWebApp/static/media/testSmall.d55bddf8.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c451884.js",
+    "static/js/2.f35024f0.chunk.js",
+    "static/css/main.166e5979.chunk.css",
+    "static/js/main.cd8d25ad.chunk.js"
+  ]
+}
