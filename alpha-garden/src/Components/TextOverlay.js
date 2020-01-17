@@ -12,11 +12,14 @@ import React from 'react';
 
 
 	 return (
-	    <div className="loadingOverlay">
-		 	<p> LOADING GARDEN... </p>
-		 	<h1> Day: {today.getDate() + today.getMonth()} </h1>
-		 </div>)
-
+	 	<div className = "LOADING">
+	 		<img src={require("./Garden-Overview.bmp")} alt="Zaaa GARDEN" height="auto" width="100%" />
+	    	<div className="Overlay">
+		 		<p> LOADING GARDEN... </p>
+		 		<h1> Day: {today.getDate() + today.getMonth()} </h1>
+		 	</div>
+		</div>
+		)
 
 	    
 }

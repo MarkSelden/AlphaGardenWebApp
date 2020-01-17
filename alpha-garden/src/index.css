@@ -13,10 +13,12 @@ body {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: 
+  z-index: 0;
 }
 
-.loadingOverlay {
+
+
+.Overlay {
   position: fixed;
   z-index: 1;
   bottom: 50%;
@@ -27,9 +29,10 @@ body {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.loadingOverlay p{
+.Overlay p{
 	position: relative;
 	right: 50px;
+
 }
 
 code {

@@ -9,21 +9,23 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: null
+      page: <BackVideo 
+          vidName={require("./Media/testSmall.mp4")}
+          endFunc={() => { this.setState({
+            page: <TextOverlay />
+
+          })}}/>
     };
   }
   
 
   render(){
-    const endFunc = () => { this.setState({text: <TextOverlay />})};
 
     return (
 
       <div>
-        <BackVideo 
-          vidName={require("./Components/testSmall.mp4")}
-          endFunc={endFunc}/>
-        {this.state.text}
+        
+        {this.state.page}
       </div>
       )
   }
