@@ -2,7 +2,7 @@
   "name": "alpha-garden",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://markSelden.github.io/AlphaGardenWebApp"
+  "homepage": "https://markSelden.github.io/AlphaGardenWebApp",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
