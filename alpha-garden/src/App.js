@@ -8,25 +8,22 @@ import TextOverlay from './Components/TextOverlay.js'
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      text: null,
+    };
   }
-
   
 
   render(){
-    let displayText = false;
-    let endFunc = () => {
-      //displayText = true;
-      
-    }
+    const endFunc = () => { this.setState({text: <TextOverlay />})};
 
     return (
 
       <div>
-        //{displayText ? <TextOverlay /> : (<h1></h1>)}
         <BackVideo 
           vidName={require("./Components/testSmall.mp4")}
           endFunc={endFunc}/>
-        <TextOverlay />
+        {this.state.text}
       </div>
       )
   }

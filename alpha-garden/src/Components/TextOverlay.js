@@ -1,23 +1,24 @@
 import React from 'react';
 
 //component for the text that goes over the background video
-function TextOverLay(props){
+ const TextOverLay = (props) => {
 	//console.log(props.show)
 	//if(!props.show){
 	//	return null;
-	//}
+	//
 
-	var today = new Date();
+	let today = new Date();
+	
+
+
 	 return (
-	    
-		 <div className="loadingOverlay">
+	    <div className="loadingOverlay">
 		 	<p> Garden Loading... </p>
-		 	<h1> Day: {today.getDate() + (today.getMonth)} </h1>
-		 </div>
+		 	<h1> Day: {today.getDate() + today.getMonth()} </h1>
+		 </div>)
 
 
 	    
-	  );
 }
 
 export default TextOverLay;
