@@ -1,4 +1,6 @@
 import React from 'react';
+import Pre_Zoom from './Pre_Zoom'
+import Post_Zoom from './Post_Zoom'
 // Component for dynamic zoom data display
 class Element4 extends React.Component{
 
@@ -7,12 +9,16 @@ class Element4 extends React.Component{
     	super(props);
 
     	this.state = {
+
+    		overlay: <Pre_Zoom className="Overlay"/>,
+
     		zoom: "no_zoom",
+
     		handleClick: () => {
 
-    			this.setState({zoom: "Zoom_Container"})
+    			this.setState({zoom: "Zoom1",
+    							overlay: <Post_Zoom className="Overlay"/>})
     		}
-
 
     	};
   	}
@@ -21,11 +27,14 @@ class Element4 extends React.Component{
 
 
 	  return (
-	  	<div id={this.state.zoom}>
 
-	    	<img src={require("./Garden-Overview.bmp")} alt="Zaaa GARDEN" height="100%" width="100%" onClick={this.state.handleClick}/>
+		  	<div id="Zoom_Container">
 
-	    </div>
+		    	<img src={require("./Garden-Overview.bmp")} alt="Zaaa GARDEN" height="95%" width="95%" onClick={this.state.handleClick}  id={this.state.zoom}/>
+
+		    	{this.state.overlay}
+
+		    </div>
 
 	    
 	  );
