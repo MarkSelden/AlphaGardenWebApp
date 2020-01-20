@@ -17,25 +17,60 @@ body {
 }
 
 
-
 .Overlay {
   position: fixed;
   z-index: 1;
-  bottom: 50%;
+  top: 35%;
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
 }
+
 
 .Overlay p{
 	position: relative;
-	right: 50px;
+	right: 3%;
 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+//Zoom stuff
+
+#Zoom_Container {
+    background-color: #333;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    border: 2px #333 solid;
+}  
+
+#Zoom_Container img{
+	animation-name: zoom;
+	animation-direction: alternate;
+	animation-duration: 5s;
+	animation-iteration-count: 2; 
+
+}
+
+@keyframes zoom {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+        transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    100% {
+        transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
+        opacity: 0;
+    }
 }
