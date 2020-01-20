@@ -16,7 +16,9 @@ import React from 'react';
 	 		<img src={require("./Garden-Overview.bmp")} alt="Zaaa GARDEN" height="100%" width="100%" />
 	    	<div className="Overlay">
 		 		<p> LOADING GARDEN... </p>
-		 		<h1> Day: {today.getDate() + today.getMonth()} </h1>
+		 		<button id="button" onClick={props.endFunc}> Day: {today.getDate() + today.getMonth()} </button>
+
+
 		 	</div>
 		</div>
 		)
