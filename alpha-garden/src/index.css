@@ -85,6 +85,11 @@ code {
 	transform: scale3d(2, 2, 2) translate3d(-300px, 200px, 0px);	
 }
 
+#ZoomOut{
+	transition: transform 5s linear;
+	transform: scale3d(1, 1, 1) translate3d(0%, 0%, 0%);	
+}
+
 @keyframes zoom {
     0% {
       opacity: 0;

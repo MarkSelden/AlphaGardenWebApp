@@ -4,9 +4,8 @@ import React from 'react';
  const Pre_Zoom = (props) => {
 	
 
-
 	 return (
-	 	<h1 Pre_Zoom data/>
+	 	<h1> Pre_Zoom Overlay </h1>
 	)
 
 	    

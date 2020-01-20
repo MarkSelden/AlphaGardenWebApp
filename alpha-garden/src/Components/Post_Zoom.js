@@ -4,7 +4,7 @@ import React from 'react';
 
 
 	 return (
-	 	<h1 Post_Zoom data/>
+	 	<h1> Post_Zoom Overlay </h1>
 		)
 
 	    
