@@ -7,14 +7,21 @@ import Element4 from './Components/Element4.js'
 
 
 class App extends React.Component {
+
   constructor(props) {
+
     super(props);
+
     this.state = {
+
       page: <BackVideo 
+
           vidName={require("./Media/testSmall.mp4")}
 
           endFunc={() => { this.setState({
+
             page: <TextOverlay 
+
                     endFunc= {() => {this.setState({page:<Element4/>})}}/>
           
 
@@ -32,6 +39,7 @@ class App extends React.Component {
       <div>
         
         {this.state.page}
+        
       </div>
       )
   }

@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 #backgroundVideo {
   position: fixed;
   right: 0;
@@ -15,6 +16,7 @@ body {
   min-height: 100%;
   z-index: 0;
 }
+
 
 
 .Overlay {
@@ -52,64 +54,129 @@ code {
     background-color: "brown";
     max_width: 100%;
     min_width: 100%;
+    min_height:100%;
     max_height: 100%;
     max-width: 100%;
     overflow: hidden;
     border: 2px #333 solid;
-}  
+    position: fixed;
+}   
 
 #Zoom_Container img{
     background-color: #333;
-    max_width: 100%;
+    min_height: 100%;
     min_width: 100%;
     max_height: 100%;
     max-width: 100%;
     overflow: hidden;
     border: 2px #333 solid;
+    position: fixed;
 }  
 
 
 
 
-#Zoom4{
-	transition: transform 5s linear;
-	transform: scale3d(2, 2, 2) translate3d(-300px, -200px, 0px);
+#Zoom11{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(37.5%, 37.5%);
+	overflow: hidden;	
 }
 
-#Zoom3{
-	transition: transform 5s linear;
-	transform: scale3d(2, 2, 2) translate3d(300px, -200px, 0px);
+
+#Zoom12{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(12.5%, 37.5%);	
 }
 
-#Zoom2{
-	transition: transform 5s linear;
-	transform: scale3d(2, 2, 2) translate3d(300px, 200px, 0px);	
+#Zoom13{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(-12.5%, 37.5%);
+	overflow: hidden;	
 }
 
-#Zoom1{
-	transition: transform 5s linear;
-	transform: scale3d(2, 2, 2) translate3d(-300px, 200px, 0px);	
+
+#Zoom14{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(-37.5%, 37.5%);	
 }
+
+
+#Zoom21{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(37.5%, 12.5%);
+	overflow: hidden;	
+}
+
+
+#Zoom22{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(12.5%, 12.5%);	
+}
+
+#Zoom23{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(-12.5%, 12.5%);
+	overflow: hidden;	
+}
+
+
+#Zoom24{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(-37.5%, 12.5%);	
+}
+
+#Zoom31{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(37.5%, 1-2.5%);
+	overflow: hidden;	
+}
+
+
+#Zoom32{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(12.5%, -12.5%);	
+}
+
+#Zoom33{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(-12.5%, -12.5%);
+	overflow: hidden;	
+}
+
+
+#Zoom34{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(-37.5%, --12.5%);	
+}
+
+#Zoom41{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(37.5%, -37.5%);
+	overflow: hidden;	
+}
+
+
+#Zoom42{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(12.5%, -37.5%);	
+}
+
+#Zoom43{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(-12.5%, -37.5%);
+	overflow: hidden;	
+}
+
+
+#Zoom44{
+	transition: transform 3s;
+	transform: scale(4, 4) translate(-37.5%, -37.5%);	
+}
+
+
 
 #ZoomOut{
-	transition: transform 5s linear;
+	transition: transform 3s;
 	transform: scale3d(1, 1, 1) translate3d(0%, 0%, 0%);	
 }
 
-@keyframes zoom {
-    0% {
-      opacity: 0;
-    }
-    5% {
-      opacity: 1;
-    }
-    95% {
-        transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);
-        animation-timing-function: ease-in;
-        opacity: 1;
-    }
-    100% {
-        transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
-        opacity: 0;
-    }
-}

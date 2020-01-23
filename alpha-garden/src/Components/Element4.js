@@ -70,7 +70,7 @@ class Element4 extends React.Component{
     }
 
     _onMouseMove(e) {
-    	this.setState({ x: e.screenX, y: e.screenY });
+    	this.setState({ x: e.clientX, y: e.clientY });
   	}	
     
 
@@ -82,13 +82,14 @@ class Element4 extends React.Component{
 	  		<div onMouseMove={this._onMouseMove.bind(this)}>
 		  	<div id="Zoom_Container">
 
-		    	<img src={require("./Garden-Overview.bmp")} alt="Zaaa GARDEN" height="95%" width="95%" onClick={this.state.handleClick}  id={this.state.zoom}/>
+		    	<img src={require("./Garden-Grid.bmp")} alt="Zaaa GARDEN" height="100%" width="100%" onClick={this.state.handleClick}  id={this.state.zoom}/>
 
 		    	
 		    </div>
 
 		    <div className="Overlay">
 		    	{this.state.overlay}
+		    	<h1> ({this.state.x}, {this.state.y}) </h1>
 		    </div>
 
 		    </div>
