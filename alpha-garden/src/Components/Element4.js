@@ -96,7 +96,6 @@ class Element4 extends React.Component{
 
 		    <div className="Overlay">
 		    	{this.state.overlay}
-		    	<h1> ({this.state.x}, {this.state.y}) </h1>
 		    </div>
 
 		    </div>
