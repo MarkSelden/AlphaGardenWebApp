@@ -3,6 +3,7 @@ A web-app built for displaying the AlphaGarden research.
 
 Flask Server [API](https://github.com/MarkSelden/AlphaGardenWebApp/blob/Backend/alpha-garden/modules/app/controllers/plants.py):
 - CRUD plants (requires a location in pixels ['x_y' string format], radius [string], plant type [string], partition number [integer])
+- Get all plants in a partition based on a user's pixel coordinate click location.
 
 To start the server, run `docker-compose up --build` in the [alpha-garden](https://github.com/MarkSelden/AlphaGardenWebApp/tree/Backend/alpha-garden) directory.
 
