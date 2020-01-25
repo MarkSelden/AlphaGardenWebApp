@@ -4,7 +4,9 @@ import React from 'react';
 
 
 	 return (
-	 	<h1> Post_Zoom Overlay </h1>
+	 	<div className="Overlay">
+	 		<h1> {props.box} </h1>
+	 	</div>
 		)
 
 	    

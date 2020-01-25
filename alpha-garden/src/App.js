@@ -38,7 +38,7 @@ class App extends React.Component {
 
       <div>
         
-        {this.state.page}
+        <Element4/>
         
       </div>
       )
