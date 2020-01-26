@@ -14,26 +14,28 @@ class Element4 extends React.Component{
 		const zoomIn = () => {
 			
 			//calculate which square to zoom into
-			let square = 1;
+			let square = 0;
 			if(this.state.x < 0.25){
-
+				square = 1;
 			}
 			else if( this.state.x < 0.5){
-				square ++;
+				square = 2;
 			}else if(this.state.x < 0.75){
-				square += 2;
+				square = 3;
 			}else{
-				square += 3;
+				square = 4;
 			}
 
 			if(this.state.y < 0.25){
+				square += 0;
 			}else if(this.state.y < 0.5){
 				square += 4;
-			}else if(0.5 < this.state.y < 0.75){
+			}else if(this.state.y < 0.75){
 				square += 8;
 			}else if(this.state.y > 0.75){
 				square += 12;
 			};
+
 
 			removeOverlay();
 			triggerZoom(square);
@@ -51,6 +53,7 @@ class Element4 extends React.Component{
 				zoom: "Zoom" + box,
 				handleClick: zoomOut
 			})
+		
 
 		}
 
@@ -118,7 +121,6 @@ class Element4 extends React.Component{
 
 		    <div className="Overlay">
 		    	{this.state.overlay}
-		    	<p> {this.state.x}, {this.state.y} </p>
 		    </div>
 
 		    </div>

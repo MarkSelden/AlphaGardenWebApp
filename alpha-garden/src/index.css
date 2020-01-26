@@ -77,23 +77,23 @@ code {
 
 
 
-//square 1 is top left, square 16 is bottom right.
+
 #Zoom1{
 	transition: transform 3s;
-	transform: scale(4, 4) translate(37.5%, 37.5%);
-	overflow: hidden;	
+	transform: scale(4, 4) translate(37.5%, 37.5%);	
 }
 
 
 #Zoom2{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(12.5%, 37.5%);	
+
 }
 
 #Zoom3{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(-12.5%, 37.5%);
-	overflow: hidden;	
+
 }
 
 
@@ -106,7 +106,7 @@ code {
 #Zoom5{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(37.5%, 12.5%);
-	overflow: hidden;	
+	
 }
 
 
@@ -118,7 +118,7 @@ code {
 #Zoom7{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(-12.5%, 12.5%);
-	overflow: hidden;	
+
 }
 
 
@@ -129,8 +129,8 @@ code {
 
 #Zoom9{
 	transition: transform 3s;
-	transform: scale(4, 4) translate(37.5%, 1-2.5%);
-	overflow: hidden;	
+	transform: scale(4, 4) translate(37.5%, -12.5%);
+	
 }
 
 
@@ -142,19 +142,19 @@ code {
 #Zoom11{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(-12.5%, -12.5%);
-	overflow: hidden;	
+
 }
 
 
 #Zoom12{
 	transition: transform 3s;
-	transform: scale(4, 4) translate(-37.5%, --12.5%);	
+	transform: scale(4, 4) translate(-37.5%, -12.5%);	
 }
 
 #Zoom13{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(37.5%, -37.5%);
-	overflow: hidden;	
+
 }
 
 
@@ -166,7 +166,7 @@ code {
 #Zoom15{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(-12.5%, -37.5%);
-	overflow: hidden;	
+
 }
 
 
