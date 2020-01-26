@@ -14,6 +14,8 @@ body {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  max-height:100%; 
+  max-width:100%;
   z-index: 0;
 }
 
@@ -75,100 +77,100 @@ code {
 
 
 
-
-#Zoom11{
+//square 1 is top left, square 16 is bottom right.
+#Zoom1{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(37.5%, 37.5%);
 	overflow: hidden;	
 }
 
 
-#Zoom12{
+#Zoom2{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(12.5%, 37.5%);	
 }
 
-#Zoom13{
+#Zoom3{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(-12.5%, 37.5%);
 	overflow: hidden;	
 }
 
 
-#Zoom14{
+#Zoom4{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(-37.5%, 37.5%);	
 }
 
 
-#Zoom21{
+#Zoom5{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(37.5%, 12.5%);
 	overflow: hidden;	
 }
 
 
-#Zoom22{
+#Zoom6{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(12.5%, 12.5%);	
 }
 
-#Zoom23{
+#Zoom7{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(-12.5%, 12.5%);
 	overflow: hidden;	
 }
 
 
-#Zoom24{
+#Zoom8{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(-37.5%, 12.5%);	
 }
 
-#Zoom31{
+#Zoom9{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(37.5%, 1-2.5%);
 	overflow: hidden;	
 }
 
 
-#Zoom32{
+#Zoom10{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(12.5%, -12.5%);	
 }
 
-#Zoom33{
+#Zoom11{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(-12.5%, -12.5%);
 	overflow: hidden;	
 }
 
 
-#Zoom34{
+#Zoom12{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(-37.5%, --12.5%);	
 }
 
-#Zoom41{
+#Zoom13{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(37.5%, -37.5%);
 	overflow: hidden;	
 }
 
 
-#Zoom42{
+#Zoom14{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(12.5%, -37.5%);	
 }
 
-#Zoom43{
+#Zoom15{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(-12.5%, -37.5%);
 	overflow: hidden;	
 }
 
 
-#Zoom44{
+#Zoom16{
 	transition: transform 3s;
 	transform: scale(4, 4) translate(-37.5%, -37.5%);	
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Pre_Zoom from './Pre_Zoom'
 import Post_Zoom from './Post_Zoom'
+import $ from 'jquery'
 // Component for dynamic zoom data display
 
 
@@ -11,8 +12,29 @@ class Element4 extends React.Component{
 	constructor(props) {
 		//Func to trigger the proper transformations to zoom into a square of the garden
 		const zoomIn = () => {
-			//mouse is in the right two quadrants
-			let square = 11;
+			
+			//calculate which square to zoom into
+			let square = 1;
+			if(this.state.x < 0.25){
+
+			}
+			else if( this.state.x < 0.5){
+				square ++;
+			}else if(this.state.x < 0.75){
+				square += 2;
+			}else{
+				square += 3;
+			}
+
+			if(this.state.y < 0.25){
+			}else if(this.state.y < 0.5){
+				square += 4;
+			}else if(0.5 < this.state.y < 0.75){
+				square += 8;
+			}else if(this.state.y > 0.75){
+				square += 12;
+			};
+
 			removeOverlay();
 			triggerZoom(square);
 			setOverlay(square);	
@@ -24,19 +46,19 @@ class Element4 extends React.Component{
 			})
 		}
 
-		const triggerZoom = (rowCol) => {
+		const triggerZoom = (box) => {
 			this.setState({
-				zoom: "Zoom" + rowCol,
+				zoom: "Zoom" + box,
 				handleClick: zoomOut
 			})
 
 		}
 
-		const setOverlay = (rowCol) => {
+		const setOverlay = (box) => {
             setTimeout(
 
             	() => {this.setState({
-            		overlay: <Post_Zoom box={rowCol}/>
+            		overlay: <Post_Zoom box={box}/>
             	})}
             , 3000);
         }
@@ -77,7 +99,7 @@ class Element4 extends React.Component{
 
     //constantly updates the position of
     _onMouseMove(e) {
-    	this.setState({ x: (document.getElementById('Zoom_Container').offsetRight), y: e.clientY });
+    	this.setState({ x: (e.clientX / $( window ).width()), y: (e.clientY / $( window ).height())  });
   	}	
     
 
@@ -96,6 +118,7 @@ class Element4 extends React.Component{
 
 		    <div className="Overlay">
 		    	{this.state.overlay}
+		    	<p> {this.state.x}, {this.state.y} </p>
 		    </div>
 
 		    </div>

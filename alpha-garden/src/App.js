@@ -16,7 +16,7 @@ class App extends React.Component {
 
       page: <BackVideo 
 
-          vidName={require("./Media/testSmall.mp4")}
+          vidName={require("./Media/time_lapse.mp4")}
 
           endFunc={() => { this.setState({
 
@@ -38,7 +38,7 @@ class App extends React.Component {
 
       <div>
         
-        <Element4/>
+        {this.state.page}
         
       </div>
       )
