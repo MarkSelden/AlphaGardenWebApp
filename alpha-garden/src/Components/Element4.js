@@ -70,11 +70,22 @@ class Element4 extends React.Component{
 
 		//Func to dynamically zoom back out to the overhead of the garden
 		const zoomOut = () => {
+			removeOverlay();
+
 			this.setState({
 				zoom: "ZoomOut",
-				overlay: <Pre_Zoom className="Overlay"/>,
 				handleClick: zoomIn
-		})}
+			})
+
+			setTimeout(
+
+            	() => {this.setState({
+            		overlay: <Pre_Zoom />
+            	})}
+            , 3000);
+
+
+		}
 
     	super(props);
 
